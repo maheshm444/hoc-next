@@ -13,6 +13,7 @@ const Home = ({
   setCustomTheme,
 }: IHome): ReactElement<any, string | JSXElementConstructor<any>> => {
   return (
+    <>
     <div
       className={`${
         theme === "dark" ? "bg-gray-500" : "bg-yellow-50"
@@ -28,6 +29,10 @@ const Home = ({
         Change Theme
       </button>
     </div>
+    <a className="m-10 hover:text-red-500" href="https://github.com/maheshm444/hoc-next/tree/main">Link to source code (github repo)</a>
+    <br/>
+    <code className="m-10 text-gray-600">Developed by Mahesh on 31-05-2024</code>
+    </>
   );
 };
 
