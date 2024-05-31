@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 
-const withHOC = (Component: React.ReactElement) => {
-  return (props) => {
+const withHOC = (Component: any) => {
+  return (props: any) => {
     const [theme, setTheme] = useState("dark");
     return (
       <Component
